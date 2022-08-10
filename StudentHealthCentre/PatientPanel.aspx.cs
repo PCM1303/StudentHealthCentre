@@ -54,7 +54,7 @@ public partial class PatientPanel : System.Web.UI.Page
                         }
 
                         //Show the appointment details
-                        PanelHeader2.Text = "You have a pendant appointment for";
+                        PanelHeader2.Text = "You have a pending appointment for";
                         Text1.Text = "<p>Date</p> <p>Time</p> <p>Dotor</p>";
                         Text2.Text = "<p>" + a.Date.ToString("dddd d MMMM", ci) + "</p><p>" + a.Time.ToString(@"hh\:mm") + "</p><p>" + patient.GP.Name + " " + patient.GP.Surname + "</p>";
                     }

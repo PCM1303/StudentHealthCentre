@@ -1,4 +1,6 @@
-﻿using System;
+﻿//This appointment page was modified by CHRIS MAHUBE
+
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Threading;
@@ -42,7 +44,7 @@ public partial class BookAnAppointment : System.Web.UI.Page
                     {
                         nextDay = nextDay.AddDays(2);
                         item.Text = nextDay.ToString("dddd d MMMM", ci);
-                        item.Value = nextDay.ToString("yyyy-MM-dd");
+                        item.Value = nextDay.ToString("dd-MM-yyyy");
                         RadioButtonList.Items.Add(item);
                     }
 
@@ -50,13 +52,13 @@ public partial class BookAnAppointment : System.Web.UI.Page
                     {
                         nextDay = nextDay.AddDays(1);
                         item.Text = nextDay.ToString("dddd d MMMM", ci);
-                        item.Value = nextDay.ToString("yyyy-MM-dd");
+                        item.Value = nextDay.ToString("dd-MM-yyyy");
                         RadioButtonList.Items.Add(item);
                     }
                     else
                     {
                         item.Text = nextDay.ToString("dddd d MMMM", ci);
-                        item.Value = nextDay.ToString("yyyy-MM-dd");
+                        item.Value = nextDay.ToString("dd-MM-yyyy");
                         RadioButtonList.Items.Add(item);
                     }
                     nextDay = nextDay.AddDays(1);

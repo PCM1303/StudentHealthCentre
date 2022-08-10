@@ -15,7 +15,7 @@ public partial class AdminPanel : System.Web.UI.Page
             FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
 
             if (ticket.Name == "000-000-0000")
-                PageHeader.Text = string.Format("<h3 class='page-header-lg'>{0}</h3>", "Administration Panel");
+                PageHeader.Text = string.Format("<h2 class='page-header-lg'>{0}</h2>", "Administration Panel");
             else
                 Response.Redirect("Index.aspx");
         }
